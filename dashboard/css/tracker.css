@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body,
+button {
+  font-family: "Lora", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+h1,h5{
+  color: black;
+}
+
+.card{
+  border-width: 3px; /* Adjust the value as needed */
+        border-style: solid;
+        border-color: #dee2e6; /* Default border color */
+}
+
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.table thead th {
+  vertical-align: middle; /* Align text vertically in the middle */
+  border-bottom: 2px solid #dee2e6;
+  background-color: #f8f9fa;
+  color: black;
+  font-size: 14px; /* Adjust the font size as needed */
+  text-transform: capitalize; /* Capitalize each word */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.table tbody+tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table .table {
+  background-color: #fff;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Pagination controls */
+.dataTables_wrapper .dataTables_paginate {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  margin-left: 0.5rem; /* Adjust the margin between buttons */
+}
+
+/* Search bar */
+.dataTables_wrapper .dataTables_filter {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Adjust the width of the modal */
+.modal-lg {
+  max-width: 90%;
+}
+
+/* Add some padding to the modal body */
+.modal-body {
+  padding: 20px;
+}
+
+/* Center the modal content */
+.modal-dialog {
+  margin: 30px auto;
+}
+
+/* Add some margin to the buttons within the modal */
+.modal-body button {
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  background-color: #495057; 
+  color: #fff; 
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; 
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #6c757d; 
+  color: #fff; 
+}
+
+.navbar-nav .nav-link.active:hover {
+  background-color: #5a6268; 
+}
+
+/* WebKit Scrollbar Styles /
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 10px; 
+}
+
+/ Track /
+::-webkit-scrollbar-track {
+  background: #322C2B; 
+}
+
+/ Handle /
+::-webkit-scrollbar-thumb {
+  background: #666; 
+  border-radius: 5px; 
+}
+
+/ Handle on hover /
+::-webkit-scrollbar-thumb:hover {
+  background: #92c0c9; 
+}
+
+
+/table styles*/
+.table thead th {
+  background-color: #343a40;
+  color: white; 
+}
+
+.table tbody tr:hover {
+  background-color: #77b7f7; 
+}
+
+.card {
+  border: 1px solid #343a40; 
+}
+.card-header {
+  background-color: #343a40; 
+  color: white; 
+  font-weight: bold; 
+}
+
+.card-body {
+  background-color: #ffffff; 
+}
+
+
+ 
+ .bi-bar-chart-fill {
+  color: #28a745; 
+}
+
+
+.bi-speedometer2 {
+  color: #007bff; 
+}
+
+.bi-person-fill {
+  color: #dc3545; 
+}
+
+.ri-hand-heart-fill {
+  color: #ffc107; 
+}
+
+.bi-graph-up {
+  color: #17a2b8; 
+}
+
+.ri-calendar-schedule-fill {
+  color: #6f42c1; 
+}
+
+.ri-logout-box-r-line {
+  color: #fd7e14; 
+}
+.bi-person-plus-fill{
+  color:#6f42c1;
+}
+.ri-wallet-3-fill{
+  color:#964B00;
+}
+.bi-person-circle{
+  color:#92c0c9;
+}

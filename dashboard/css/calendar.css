@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+h1,h5{
+  color: black;
+}
+
+.card{
+  border-width: 3px; /* Adjust the value as needed */
+        border-style: solid;
+        border-color: #dee2e6; /* Default border color */
+}
+#calendar {
+    max-width: 900px;
+    margin: 0 auto; }
+    #calendar .fc-view-container {
+      padding: 30px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2); }
+  

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body,
+button {
+  font-family: "Lora", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+h1,h5{
+  color: black;
+}
+
+.card{
+  border-width: 3px; /* Adjust the value as needed */
+        border-style: solid;
+        border-color: #dee2e6; /* Default border color */
+}
+
+.nav-link:hover {
+  background-color: #495057; 
+  color: #fff; 
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; 
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #6c757d; 
+  color: #fff; 
+}
+
+.navbar-nav .nav-link.active:hover {
+  background-color: #5a6268; 
+}
+
+/* WebKit Scrollbar Styles /
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 10px; 
+}
+
+/ Track /
+::-webkit-scrollbar-track {
+  background: #322C2B; 
+}
+
+/ Handle /
+::-webkit-scrollbar-thumb {
+  background: #666; 
+  border-radius: 5px; 
+}
+
+/ Handle on hover /
+::-webkit-scrollbar-thumb:hover {
+  background: #92c0c9; 
+}
+
+
+/table styles*/
+.table thead th {
+  background-color: #343a40;
+  color: white; 
+}
+
+.table tbody tr:hover {
+  background-color: #77b7f7; 
+}
+
+.card {
+  border: 1px solid #343a40; 
+}
+.card-header {
+  background-color: #343a40; 
+  color: white; 
+  font-weight: bold; 
+}
+
+.card-body {
+  background-color: #ffffff; 
+}
+
+.table {
+  width: 100%; 
+  margin-top: 20px; 
+  background-color: #92c0c9; 
+}
+ 
+ .bi-bar-chart-fill {
+  color: #28a745; 
+}
+
+
+.bi-speedometer2 {
+  color: #007bff; 
+}
+
+.bi-person-fill {
+  color: #dc3545; 
+}
+
+.ri-hand-heart-fill {
+  color: #ffc107; 
+}
+
+.bi-graph-up {
+  color: #17a2b8; 
+}
+
+.ri-calendar-schedule-fill {
+  color: #6f42c1; 
+}
+
+.ri-logout-box-r-line {
+  color: #fd7e14; 
+}
+.bi-person-plus-fill{
+  color:#6f42c1;
+}
+.ri-wallet-3-fill{
+  color:#964B00;
+}
+.bi-person-circle{
+  color:#92c0c9;
+}
